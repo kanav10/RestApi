@@ -12,7 +12,7 @@ mongoose.connect(
      +process.env.MONGO_ATLAS_PW+
      '@node-rest-shop-shard-00-00-cywta.mongodb.net:27017,node-rest-shop-shard-00-01-cywta.mongodb.net:27017,node-rest-shop-shard-00-02-cywta.mongodb.net:27017/test?ssl=true&replicaSet=node-rest-shop-shard-0&authSource=admin&retryWrites=true',
      {
-         useMongoClient : true,
+         useNewUrlParser : true,
      }
     );
 app.use(morgan('dev'));
